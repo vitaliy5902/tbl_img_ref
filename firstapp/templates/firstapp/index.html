@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Hello Django</title>
+</head>
+<body>
+<h2>{{ header }}</h2>
+
+<center>
+<table width="1900" height="330">
+<tr>
+
+{% for user in remembrancies %}
+    <td bgcolor="#c5ffa0" valign="top"><center><a href= "/aa"> <img src="{% static 'images/mont.JPG' %}" alt="Stones along the river"></center>
+<br>
+<center>{{ user }}</center>
+</td>
+{% endfor %}
+
+</tr>
+
+</body>
+</html>
